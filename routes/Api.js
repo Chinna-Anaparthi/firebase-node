@@ -8,7 +8,7 @@ app.use(parser.json());
 const cors = require('cors');
 app.use(cors());
 const ip = '172.17.15.7';
-const port = 5000;
+const port = process.env.PORT;
 
 const mongoose = require("mongoose");
 
